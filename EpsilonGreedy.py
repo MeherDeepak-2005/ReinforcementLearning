@@ -17,6 +17,7 @@ class Bandit:
 
   def pull(self):
     return np.random.random() < self.p
+    # Returns true or false at random rate of self.p value. Nothing else.
 
   def update(self,x):
     self.N += 1
@@ -54,5 +55,7 @@ class Bandit:
     
 if __name__ == '__main__':
   Bandit.model()
+
+
 
 
