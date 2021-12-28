@@ -36,4 +36,8 @@ while True:
     j = argmax(means of bandits)
   x = perform action on bandit j and get reward
   bandits[j].update_mean(x)
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> master
