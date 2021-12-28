@@ -16,14 +16,17 @@ Epsilon Greedy Algorithm has following advantages:
 * Multi-armed bandit problem
 * Always picking the bandit with the highest probability
 ### psuedocode
+```python
 while True:
   chosen_bandit = argmax(bandit means collected)
   reward = play bandit j and collect reward
   bandits[j].update_mean(reward)
+```
 
 
 # Pseudocode for epsilon greedy
 * For multi-armed bandit problem
+```python
 while True:
   epsilon = 0.2
   randomProb = random number in [0,1]
@@ -33,3 +36,4 @@ while True:
     j = argmax(means of bandits)
   x = perform action on bandit j and get reward
   bandits[j].update_mean(x)
+```
