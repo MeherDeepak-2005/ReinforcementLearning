@@ -36,8 +36,20 @@ while True:
     j = argmax(means of bandits)
   x = perform action on bandit j and get reward
   bandits[j].update_mean(x)
-<<<<<<< HEAD
 ```
-=======
-```
->>>>>>> master
+# Epsilon Greedy vs Epsilon Decay Strategy
+* Decrementing Epsilon by mutliplying epsilon by 0.9995 is one of the most famous techniques used in traning a Deep Q Learning Network.
+* The Epsilon Decay experiment achieved a maximum win rate of 75 percent while the max win rate Epsilon Greedy without any decay in Epsilon was able to achieve was 72.
+* I repeated the experiment 20 times and took the best result out of each experiment.
+
+## Results
+
+### Epsilon Greedy
+![image](EpsilonGreedy.png "72.8% Win rate")
+
+### Epsilon Greedy (Decay Epsilon)
+![image](EpsilonDecay.png "75.6% Win rate")
+
+
+* Although the difference between the both strategies might seem to small to consider Epsilon Decay as a effective improvement over Epsilon Greedy.
+ * When you are you designing a complex AI such as which can play Atari or Space Invaders game Epsilon Decay can have huge improvements.
