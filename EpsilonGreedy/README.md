@@ -1,5 +1,5 @@
 # EpsilonGreddy
-Epsilon Greedy Algorithm implemented in python from scratch using Numpy. For the multi-armed bandit problem.
+Epsilon Greedy Algorithm implemented in python from scratch using Numpy. **For the multi-armed bandit problem**.
 
 
 
